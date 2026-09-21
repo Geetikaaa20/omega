@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-terminal {
+  font-family: 'VT323', monospace;
+}
+
+/* Retro CRT scanline and screen overlay */
+.crt-effect::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 20;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.arcade-glow {
+  text-shadow: 0 0 8px rgba(234, 179, 8, 0.6), 0 0 20px rgba(234, 179, 8, 0.3);
+}
+
+.neon-border-amber {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.25), inset 0 0 15px -3px rgba(245, 158, 11, 0.15);
+}
+

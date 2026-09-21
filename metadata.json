@@ -1,0 +1,6 @@
+{
+  "name": "Retro Arcade Mini Games",
+  "description": "Play classic mini games in your browser including Cake Making (Comfy Cakes bakery), Snake, Breakout Bounce, Mini Platformer, and Falling Blocks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
